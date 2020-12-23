@@ -1,0 +1,68 @@
+/*Globals*/
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+code,
+pre {
+    background-color: #333;
+    color: #fff;
+    padding: 10px
+}
+
+
+/*Nav*/
+
+.navbar {
+    height: 40px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a:hover {
+    border-bottom: 2px #c4c1c1 solid;
+}
+
+.navbar .flex {
+    justify-content: flex-end;
+    height: (100% - 230px);
+}
+
+
+/* About Section*/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.info {
+    text-align: center;
+    color: white;
+}
