@@ -12,25 +12,25 @@
 
 .bg-dark,
 .btn-dark {
-    background-color: rgb(92, 92, 92);
-    color: rgb(201, 199, 199);
+    background-color: rgb(48, 113, 167);
+    color: rgb(245, 235, 235);
 }
 
 .bg-light,
 .btn-light {
-    background-color: #a0a0a0;
-    color: #333;
+    background-color: #f7daf7;
+    color: rgb(78, 47, 99);
 }
 
 
 /* Text Colors */
 
 .text-dark {
-    color: #696969;
+    color: rgb(245, 235, 235);
 }
 
 .text-light {
-    color: #f4f4f4;
+    color: rgb(78, 47, 99);
 }
 
 .bg-dark a,
@@ -40,7 +40,7 @@
 
 .bg-light a,
 .btn-light a {
-    color: #333;
+    color: rgb(78, 47, 99);
 }
 
 

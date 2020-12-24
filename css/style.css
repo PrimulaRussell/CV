@@ -20,11 +20,17 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    margin: auto;
+}
+
 
 /* Navbar*/
 
 .navbar {
     height: 40px;
+    background-color: rgba(247, 218, 247, 0.527);
 }
 
 .navbar ul {
@@ -45,6 +51,19 @@ a {
 }
 
 .navbar a:hover {
-    color: #d1d1d1;
-    border-bottom: solid #d1d1d1 1px;
+    color: #b2e6ab;
+    border-bottom: solid #b2e6ab 1px;
+}
+
+.about {
+    text-align: center;
+}
+
+.background {
+    background-image: url("/images/background.jpg");
+    width: 100%;
+    padding: 5em;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
 }
