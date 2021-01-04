@@ -30,6 +30,7 @@ img {
 
 .navbar {
     height: 40px;
+    width: 100%;
     background-color: rgba(247, 218, 247, 0.527);
 }
 
@@ -62,8 +63,6 @@ img {
 .background {
     background-image: url("/images/background.jpg");
     width: 100%;
-    padding: 5em;
-    position: absolute;
-    z-index: -1;
-    top: 0px;
 }
+
+.portfolio {}
