@@ -56,8 +56,13 @@ img {
     border-bottom: solid #b2e6ab 1px;
 }
 
+.info {
+    padding-top: 1rem;
+}
+
 .about {
     text-align: center;
+    padding-bottom: 3rem;
 }
 
 .background {
@@ -65,4 +70,10 @@ img {
     width: 100%;
 }
 
-.portfolio {}
+
+/* Portfolio Section */
+
+.portfolio {
+    text-align: center;
+    height: 350px;
+}
