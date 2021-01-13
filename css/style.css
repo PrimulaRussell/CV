@@ -156,5 +156,8 @@
     
     .portfolio {
         text-align: center;
-        height: 350px;
+    }
+    
+    #portfolio-container {
+        margin-bottom: 10em;
     }
