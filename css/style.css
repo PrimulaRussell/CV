@@ -25,6 +25,10 @@
         display: block;
         margin: auto;
     }
+    
+    h1 {
+        padding: 20px;
+    }
     /* Navbar*/
     
     .navbar {
@@ -156,8 +160,14 @@
     
     .portfolio {
         text-align: center;
+        padding-bottom: 5em;
     }
     
     #portfolio-container {
-        margin-bottom: 10em;
+        background-color: rgb(255, 255, 255, .6);
+        color: #ffcaff;
+    }
+    
+    .project {
+        margin: 1em;
     }
