@@ -26,6 +26,8 @@ function submitForm(e) {
     let message = document.querySelector(".message").value;
 
     saveContactInfo(name, email, message);
+
+    document.querySelector(".contact-form").reset();
 }
 
 function saveContactInfo(name, email, message) {

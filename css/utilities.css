@@ -55,6 +55,6 @@
 }
 
 .rainbow-border {
-    border: 3px solid;
+    border: 2px solid;
     border-image: conic-gradient(#ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #ee7f7e) 1
 }
