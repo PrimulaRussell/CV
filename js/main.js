@@ -57,5 +57,23 @@ function sendEmail(name, email, message) {
         From: "primarimabusiness@gmail.com",
         Subject: `${name} sent you a message.`,
         Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
-    }).then((message) => alert("Message sent!"))
+    }).then((message) => modalAlert())
+}
+
+//Message sent alert//
+
+let modalBg = document.querySelector(".modal-bg");
+
+function modalAlert() {
+    //Making modal visable//
+    modalBg.classList.add("modal-active");
+
+    modalDisappear();
+
+}
+
+function modalDisappear() {
+    setTimeout(function() {
+        modalBg.classList.remove("modal-active")
+    }, 3000);
 }
