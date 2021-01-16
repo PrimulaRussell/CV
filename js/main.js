@@ -28,7 +28,11 @@ function submitForm(e) {
     saveContactInfo(name, email, message);
 
     document.querySelector(".contact-form").reset();
+
+    sendEmail(name, email, message);
 }
+
+//Send data to Firebase//
 
 function saveContactInfo(name, email, message) {
     let newContactInfo = contactInfo.push();
@@ -40,4 +44,18 @@ function saveContactInfo(name, email, message) {
         message: message,
     });
 
+}
+
+//Send contact form data to email//
+
+function sendEmail(name, email, message) {
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "primarimabusiness@gmail.com",
+        Password: "rzxhejhepiybamzf",
+        To: "primarimabusiness@gmail.com",
+        From: "primarimabusiness@gmail.com",
+        Subject: `${name} sent you a message.`,
+        Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
+    }).then((message) => alert("Message sent!"))
 }
