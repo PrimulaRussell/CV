@@ -75,5 +75,5 @@ function modalAlert() {
 function modalDisappear() {
     setTimeout(function() {
         modalBg.classList.remove("modal-active")
-    }, 3000);
+    }, 1000);
 }
