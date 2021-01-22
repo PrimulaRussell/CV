@@ -101,11 +101,6 @@
         color: #fff;
     }
     
-    .grid-2,
-    .grid-3 {
-        grid-column: 3;
-    }
-    
     .contact-form label,
     .marquee span {
         display: inline-block;
@@ -142,6 +137,13 @@
     .modal {
         justify-content: center;
     }
+    
+    .greeting,
+    .headshot,
+    .marquee span,
+    .marquee {
+        position: relative;
+    }
     /* Navbar*/
     
     .navbar {
@@ -173,43 +175,27 @@
     }
     /* About Section */
     
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, .25fr);
-        gap: 3em;
+    #about {
+        height: 400px;
     }
     
-    .grid-1 {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
+    .greeting {
+        width: 350px;
     }
     
-    .grid-2 {
-        grid-row: 1;
-    }
-    
-    .grid-3 {
-        grid-row: 2;
-        margin-top: -5em;
-    }
-    
-    .opening {
-        margin-top: 30%;
-        margin-left: -20%;
-        height: 100%;
+    .headshot {
+        bottom: 300px;
+        left: 250px;
     }
     
     .info {
         padding: 1rem;
     }
-    
-    #about {
-        padding-bottom: 3rem;
-    }
     /*Marquee Scroller*/
     
     .marquee {
+        bottom: 200px;
+        left: 450px;
         width: 600px;
         height: 175px;
         white-space: nowrap;
@@ -217,7 +203,6 @@
     }
     
     .marquee span {
-        position: relative;
         top: 15%;
         left: 100%;
         animation: marquee 8.5s linear infinite;
@@ -271,6 +256,12 @@
     
     #portfolio {
         padding-bottom: 5em;
+    }
+    
+    #portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100, auto);
     }
     
     .project {
