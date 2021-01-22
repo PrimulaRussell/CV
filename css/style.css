@@ -1,326 +1,363 @@
-    /*Globals*/
-    
-    @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
-    * {
-        margin: 0;
-        padding: 0%;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Hachi Maru Pop', monospace;
-        line-height: 1.6;
-    }
-    
-    .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 40px;
-    }
-    
-    ul {
-        list-style-type: none;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    img {
-        display: block;
-        margin: auto;
-    }
-    
-    h1 {
-        margin-top: 60px;
-        font-size: 35px;
-        padding-bottom: 20px;
-    }
-    
-    p {
-        margin: 15px auto 0px auto;
-        font-size: 16px;
-    }
-    /* Repeating Styles*/
-    
-    h1,
-    p,
-    #about,
-    #portfolio {
-        text-align: center;
-    }
-    
-    p,
-    .contact-form {
-        width: 80%;
-    }
-    
-    .navbar,
-    #portfolio {
-        background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
-    }
-    
-    span,
-    .info,
-    #contact,
-    .contact-form,
-    input,
-    .message,
-    button {
-        background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    .marquee,
-    button,
-    .modal {
-        border: 2px solid;
-        border-image: conic-gradient(#ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #ee7f7e) 1
-    }
-    
-    ul,
-    .navbar,
-    .socials,
-    .modal-bg,
-    .modal {
-        display: flex;
-    }
-    
-    .navbar,
-    .contact-form input,
-    .contact-form textarea,
-    .contact-form button,
-    .modal-bg {
-        width: 100%;
-    }
-    
-    .navbar,
-    .navbar a,
-    #portfolio {
-        color: #fff;
-    }
-    
-    .contact-form label,
-    .marquee span {
-        display: inline-block;
-    }
-    
-    #portfolio-container,
-    .modal {
-        background-color: rgb(255, 255, 255, .6);
-    }
-    
-    .contact-form input,
-    .contact-form textarea,
-    .contact-form button {
-        padding: 12px 20px;
-        outline: none;
-    }
-    
-    .contact-form input,
-    .contact-form textarea {
-        border: none;
-        border-bottom: 2px solid transparent;
-        border-image: linear-gradient(to bottom right, #ee7f7e 0%, #f896fc 25%, #8ee3ee 50%, #f1fa90 75%, #f5a289 100%);
-        border-image-slice: 1;
-        font-size: 18px;
-        border-radius: 3px;
-    }
-    
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-        border-bottom: 2px solid #000;
-    }
-    
-    .modal-bg,
-    .modal {
-        justify-content: center;
-    }
-    
-    .greeting,
-    .headshot,
-    .marquee span,
-    .marquee {
-        position: relative;
-    }
-    /* Navbar*/
-    
-    .navbar {
-        height: 40px;
-        justify-content: space-between;
-    }
-    
-    .navbar img {
-        margin: 10px;
-    }
-    
-    .navbar ul {
-        margin-right: 1vh;
-    }
-    
-    .navbar li {
-        margin: auto 2vh;
-    }
-    
-    .seperation {
-        padding: 0 1em;
-        border-width: 0 1px;
-        border-style: solid;
-    }
-    
-    .navbar a:hover {
-        color: #000000;
-        border-bottom: solid #000000 1px;
-    }
-    /* About Section */
-    
-    #about {
-        height: 400px;
-    }
-    
-    .greeting {
-        width: 350px;
-    }
-    
-    .headshot {
-        bottom: 300px;
-        left: 250px;
-    }
-    
-    .info {
-        padding: 1rem;
-    }
-    /*Marquee Scroller*/
-    
-    .marquee {
-        bottom: 200px;
-        left: 450px;
-        width: 600px;
-        height: 175px;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    
-    .marquee span {
-        top: 15%;
-        left: 100%;
-        animation: marquee 8.5s linear infinite;
-    }
-    
-    .marquee:hover span {
-        animation-play-state: paused;
-    }
-    
-    .marquee span:nth-child(1) {
-        animation-delay: 0s;
-    }
-    
-    .marquee span:nth-child(2) {
-        animation-delay: 0.4s;
-    }
-    
-    .marquee span:nth-child(3) {
-        animation-delay: 0.8s;
-    }
-    
-    .marquee span:nth-child(4) {
-        animation-delay: 1.2s;
-    }
-    
-    .marquee span:nth-child(5) {
-        animation-delay: 1.6s;
-    }
-    
-    .marquee span:nth-child(6) {
-        animation-delay: 2.0s;
-    }
-    
-    .marquee span:nth-child(7) {
-        animation-delay: 2.4s;
-    }
-    
-    .marquee span:nth-child(8) {
-        animation-delay: 2.75s;
-    }
-    
-    @keyframes marquee {
-        0% {
-            left: 95%;
+        /*Globals*/
+        
+        @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+        * {
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
         }
-        100% {
-            left: -170%;
+        
+        body {
+            font-family: 'Hachi Maru Pop', monospace;
+            line-height: 1.6;
         }
-    }
-    /* Portfolio Section */
-    
-    #portfolio {
-        padding-bottom: 5em;
-    }
-    
-    #portfolio-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: minmax(100, auto);
-    }
-    
-    .project {
-        margin: 1em;
-    }
-    /* Contact Section */
-    
-    .contact-form {
-        margin: 35px auto 0px auto;
-    }
-    
-    .contact-form label {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    
-    .contact-form input {
-        margin-bottom: 20px;
-    }
-    
-    .contact-form button {
-        font-size: 19px;
-        font-weight: 600;
-        margin: 25px 0 30px;
-        cursor: pointer;
-        transition: 0.2s ease-in-out;
-    }
-    
-    @media all and (min-width: 1000px) {
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        img {
+            display: block;
+            margin: auto;
+        }
+        
+        h1 {
+            margin-top: 60px;
+            font-size: 35px;
+            padding-bottom: 20px;
+        }
+        
+        p {
+            margin: 15px auto 0px auto;
+            font-size: 16px;
+        }
+        /* Repeating Styles*/
+        
+        h1,
+        p,
+        #about,
+        #portfolio {
+            text-align: center;
+        }
+        
+        p,
         .contact-form {
-            width: 40%;
+            width: 80%;
         }
-    }
-    
-    @media all and (min-width: 1080px) {
+        
+        .navbar,
+        #portfolio {
+            background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
+        }
+        
+        span,
+        .info,
+        #contact,
+        .contact-form,
+        input,
+        .message,
+        button {
+            background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .marquee,
+        button,
+        .modal {
+            border: 2px solid;
+            border-image: conic-gradient(#ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #ee7f7e) 1
+        }
+        
+        ul,
+        .navbar,
+        .socials,
+        .modal-bg,
+        .modal {
+            display: flex;
+        }
+        
+        .navbar,
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button,
+        .modal-bg {
+            width: 100%;
+        }
+        
+        .navbar,
+        .navbar a,
+        #portfolio {
+            color: #fff;
+        }
+        
+        .contact-form label,
+        .marquee span {
+            display: inline-block;
+        }
+        
+        #portfolio-container,
+        .modal {
+            background-color: rgb(255, 255, 255, .6);
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            padding: 12px 20px;
+            outline: none;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            border: none;
+            border-bottom: 2px solid transparent;
+            border-image: linear-gradient(to bottom right, #ee7f7e 0%, #f896fc 25%, #8ee3ee 50%, #f1fa90 75%, #f5a289 100%);
+            border-image-slice: 1;
+            font-size: 18px;
+            border-radius: 3px;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-bottom: 2px solid #000;
+        }
+        
+        .modal-bg,
+        .modal {
+            justify-content: center;
+        }
+        
+        .greeting,
+        .headshot,
+        .marquee span,
+        .marquee {
+            position: relative;
+        }
+        /* Navbar*/
+        
+        .navbar {
+            height: 40px;
+            justify-content: space-between;
+        }
+        
+        .navbar img {
+            margin: 10px;
+        }
+        
+        .navbar ul {
+            margin-right: 1vh;
+        }
+        
+        .navbar li {
+            margin: auto 2vh;
+        }
+        
+        .seperation {
+            padding: 0 1em;
+            border-width: 0 1px;
+            border-style: solid;
+        }
+        
+        .navbar a:hover {
+            color: #000000;
+            border-bottom: solid #000000 1px;
+        }
+        /* About Section */
+        
+        #about {
+            height: 400px;
+        }
+        
+        .greeting {
+            width: 350px;
+        }
+        
+        .headshot {
+            bottom: 300px;
+            left: 250px;
+        }
+        
+        .info {
+            padding: 1rem;
+        }
+        /*Marquee Scroller*/
+        
+        .marquee {
+            bottom: 200px;
+            left: 450px;
+            width: 600px;
+            height: 175px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        .marquee span {
+            top: 15%;
+            left: 100%;
+            animation: marquee 8.5s linear infinite;
+        }
+        
+        .marquee:hover span {
+            animation-play-state: paused;
+        }
+        
+        .marquee span:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .marquee span:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        
+        .marquee span:nth-child(3) {
+            animation-delay: 0.8s;
+        }
+        
+        .marquee span:nth-child(4) {
+            animation-delay: 1.2s;
+        }
+        
+        .marquee span:nth-child(5) {
+            animation-delay: 1.6s;
+        }
+        
+        .marquee span:nth-child(6) {
+            animation-delay: 2.0s;
+        }
+        
+        .marquee span:nth-child(7) {
+            animation-delay: 2.4s;
+        }
+        
+        .marquee span:nth-child(8) {
+            animation-delay: 2.75s;
+        }
+        
+        @keyframes marquee {
+            0% {
+                left: 95%;
+            }
+            100% {
+                left: -170%;
+            }
+        }
+        /* Portfolio Section */
+        
+        #portfolio {
+            padding-bottom: 5em;
+        }
+        
+        #portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(100, auto);
+        }
+        
+        .project {
+            margin: 1em;
+        }
+        /* Contact Section */
+        
         .contact-form {
+            margin: 35px auto 0px auto;
+        }
+        
+        .contact-form label {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .contact-form input {
+            margin-bottom: 20px;
+        }
+        
+        .contact-form button {
+            font-size: 19px;
+            font-weight: 600;
+            margin: 25px 0 30px;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+        }
+        
+        @media all and (min-width: 1000px) {
+            .contact-form {
+                width: 40%;
+            }
+        }
+        
+        @media all and (min-width: 1080px) {
+            .contact-form {
+                width: 30%;
+            }
+        }
+        /* Modal */
+        
+        .modal-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s opacity 0.5s;
+        }
+        
+        .modal-active {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .modal {
             width: 30%;
+            height: 30%;
         }
-    }
-    /* Modal */
-    
-    .modal-bg {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5);
-        align-items: center;
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s opacity 0.5s;
-    }
-    
-    .modal-active {
-        visibility: visible;
-        opacity: 1;
-    }
-    
-    .modal {
-        width: 30%;
-        height: 30%;
-    }
+        /* Media Queries*/
+        /*Phone*/
+        /* Portrait */
+        
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+            .container {
+                min-width: 375px;
+                max-width: 812px;
+            }
+            /* Navbar*/
+            .navbar {
+                height: 4vh;
+                width: 100%;
+            }
+            .navbar img {
+                margin: 5px;
+            }
+            .navbar li {
+                margin: auto 5px;
+                font-size: 15px;
+                font-weight: bolder;
+            }
+            .seperation {
+                padding: 0 1em;
+                border-width: 0 1px;
+                border-style: solid;
+            }
+            .navbar a:hover {
+                color: #000000;
+                border-bottom: solid #000000 1px;
+            }
+        }
+        /* Landscape */
+        
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+            /*Searched*/
+        }
