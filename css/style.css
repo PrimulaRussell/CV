@@ -12,9 +12,14 @@
         line-height: 1.6;
     }
     
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    
     ul {
         list-style-type: none;
-        display: flex;
     }
     
     a {
@@ -27,29 +32,121 @@
     }
     
     h1 {
-        text-align: center;
         margin-top: 60px;
         font-size: 35px;
         padding-bottom: 20px;
     }
     
     p {
-        text-align: center;
         margin: 15px auto 0px auto;
         font-size: 16px;
+    }
+    /* Repeating Styles*/
+    
+    h1,
+    p,
+    #about,
+    #portfolio {
+        text-align: center;
+    }
+    
+    p,
+    .contact-form {
         width: 80%;
+    }
+    
+    .navbar,
+    #portfolio {
+        background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
+    }
+    
+    span,
+    .info,
+    #contact,
+    .contact-form,
+    input,
+    .message,
+    button {
+        background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .marquee,
+    button,
+    .modal {
+        border: 2px solid;
+        border-image: conic-gradient(#ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #ee7f7e) 1
+    }
+    
+    ul,
+    .navbar,
+    .socials,
+    .modal-bg,
+    .modal {
+        display: flex;
+    }
+    
+    .navbar,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button,
+    .modal-bg {
+        width: 100%;
+    }
+    
+    .navbar,
+    .navbar a,
+    #portfolio {
+        color: #fff;
+    }
+    
+    .grid-2,
+    .grid-3 {
+        grid-column: 3;
+    }
+    
+    .contact-form label,
+    .marquee span {
+        display: inline-block;
+    }
+    
+    #portfolio-container,
+    .modal {
+        background-color: rgb(255, 255, 255, .6);
+    }
+    
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        padding: 12px 20px;
+        outline: none;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        border: none;
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(to bottom right, #ee7f7e 0%, #f896fc 25%, #8ee3ee 50%, #f1fa90 75%, #f5a289 100%);
+        border-image-slice: 1;
+        font-size: 18px;
+        border-radius: 3px;
+    }
+    
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border-bottom: 2px solid #000;
+    }
+    
+    .modal-bg,
+    .modal {
+        justify-content: center;
     }
     /* Navbar*/
     
     .navbar {
         height: 40px;
-        width: 100%;
-        display: flex;
         justify-content: space-between;
-    }
-    
-    .socials {
-        display: flex;
     }
     
     .navbar img {
@@ -64,7 +161,7 @@
         margin: auto 2vh;
     }
     
-    .item-2 {
+    .seperation {
         padding: 0 1em;
         border-width: 0 1px;
         border-style: solid;
@@ -89,12 +186,10 @@
     }
     
     .grid-2 {
-        grid-column: 3;
         grid-row: 1;
     }
     
     .grid-3 {
-        grid-column: 3;
         grid-row: 2;
         margin-top: -5em;
     }
@@ -109,8 +204,7 @@
         padding: 1rem;
     }
     
-    .about {
-        text-align: center;
+    #about {
         padding-bottom: 3rem;
     }
     /*Marquee Scroller*/
@@ -123,7 +217,6 @@
     }
     
     .marquee span {
-        display: inline-block;
         position: relative;
         top: 15%;
         left: 100%;
@@ -176,14 +269,8 @@
     }
     /* Portfolio Section */
     
-    .portfolio {
-        text-align: center;
+    #portfolio {
         padding-bottom: 5em;
-    }
-    
-    #portfolio-container {
-        background-color: rgb(255, 255, 255, .6);
-        color: #ffcaff;
     }
     
     .project {
@@ -193,55 +280,21 @@
     
     .contact-form {
         margin: 35px auto 0px auto;
-        width: 80%;
     }
     
     .contact-form label {
         font-size: 20px;
-        display: inline-block;
         margin-bottom: 10px;
     }
     
     .contact-form input {
-        padding: 12px 20px;
-        outline: none;
-        border: none;
-        border-bottom: 2px solid transparent;
-        border-image: linear-gradient(to bottom right, #ee7f7e 0%, #f896fc 25%, #8ee3ee 50%, #f1fa90 75%, #f5a289 100%);
-        border-image-slice: 1;
-        font-size: 18px;
-        border-radius: 3px;
         margin-bottom: 20px;
-        width: 100%;
-    }
-    
-    .contact-form input:focus {
-        border-bottom: 2px solid #000;
-    }
-    
-    .contact-form textarea {
-        padding: 12px 20px;
-        outline: none;
-        border: none;
-        border-bottom: 2px solid transparent;
-        border-image: linear-gradient(to bottom right, #ee7f7e 0%, #f896fc 25%, #8ee3ee 50%, #f1fa90 75%, #f5a289 100%);
-        border-image-slice: 1;
-        font-size: 18px;
-        border-radius: 3px;
-        width: 100%;
-    }
-    
-    .contact-form textarea:focus {
-        border-bottom: 2px solid #000000;
     }
     
     .contact-form button {
         font-size: 19px;
         font-weight: 600;
-        outline: none;
-        width: 100%;
         margin: 25px 0 30px;
-        padding: 12px 20px;
         cursor: pointer;
         transition: 0.2s ease-in-out;
     }
@@ -263,11 +316,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        justify-content: center;
         align-items: center;
         visibility: hidden;
         opacity: 0;
@@ -280,9 +330,6 @@
     }
     
     .modal {
-        background-color: rgb(255, 255, 255, .6);
         width: 30%;
         height: 30%;
-        display: flex;
-        justify-content: center;
     }
