@@ -5,10 +5,10 @@
             margin: 0;
             padding: 0%;
             box-sizing: border-box;
+            font-family: 'Hachi Maru Pop', monospace;
         }
         
         body {
-            font-family: 'Hachi Maru Pop', monospace;
             line-height: 1.6;
         }
         
@@ -66,8 +66,9 @@
         .contact-form,
         input,
         .message,
-        button {
+       .contact-form button {
             background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             -moz-background-clip: text;
@@ -79,7 +80,7 @@
         }
         
         .marquee,
-        button,
+       .contact-form button,
         .modal {
             border: 2px solid;
             border-image: conic-gradient(#ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #ee7f7e) 1
@@ -116,6 +117,12 @@
         .modal {
             background-color: rgb(255, 255, 255, .6);
         }
+
+        .project img,
+        .portfolio-btn {
+            border: 2px solid #fff;
+            border-radius: 5px;
+        }
         
         .contact-form input,
         .contact-form textarea,
@@ -125,7 +132,7 @@
         }
         
         .contact-form input,
-        .contact-form textarea {
+        .contact-form textarea{
             border: none;
             border-bottom: 2px solid transparent;
             border-image: linear-gradient(to bottom right, #ee7f7e 0%, #f896fc 25%, #8ee3ee 50%, #f1fa90 75%, #f5a289 100%);
@@ -272,6 +279,16 @@
         
         .project {
             margin: 1em;
+        }
+    
+        .portfolio-btn {
+            outline: none;
+            padding: 2%;
+            margin: 5px;
+            color: #fff;
+            background-color: transparent;
+            font-size: 15px;
+            font-weight: 900;
         }
         /* Contact Section */
         
