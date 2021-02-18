@@ -339,9 +339,8 @@
         /*Phone*/
         /* Portrait */
         
-        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+        @media only screen and (min-device-width: 375px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
             
-
             /* Navbar*/
             #menu-button{
                 display: initial;
@@ -393,40 +392,6 @@
             margin: 1em;
         }
 
-        /* Contact Section */
-        
-        .contact-form {
-            margin: 35px auto 0px auto;
-        }
-        
-        .contact-form label {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-        
-        .contact-form input {
-            margin-bottom: 20px;
-        }
-        
-        .contact-form button {
-            font-size: 19px;
-            font-weight: 600;
-            margin: 25px 0 30px;
-            cursor: pointer;
-            transition: 0.2s ease-in-out;
-        }
-        
-        @media all and (min-width: 1000px) {
-            .contact-form {
-                width: 40%;
-            }
-        }
-        
-        @media all and (min-width: 1080px) {
-            .contact-form {
-                width: 30%;
-            }
-        }
         /* Modal */
         
         .modal-bg {
