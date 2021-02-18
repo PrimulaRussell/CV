@@ -31,7 +31,7 @@
             margin: auto;
         }
         
-        h1 {
+        .greeting {
             margin-top: 60px;
             font-size: 35px;
             padding-bottom: 20px;
@@ -43,10 +43,10 @@
         }
         /* Repeating Styles*/
         
-        h1,
-        p,
+        .greeting,
         #about,
-        #portfolio {
+        #portfolio,
+        #contact {
             text-align: center;
         }
         
@@ -61,7 +61,7 @@
         }
         
         span,
-        .info,
+        .greeting,
         #contact,
         .contact-form,
         input,
@@ -94,7 +94,7 @@
             display: flex;
         }
         
-        .navbar,
+        
         .contact-form input,
         .contact-form textarea,
         .contact-form button,
@@ -168,6 +168,14 @@
             margin: 10px;
         }
         
+        #menu-button {
+            display: none;
+            margin: auto;
+            background-color:transparent;
+            outline: none;
+            border: none;
+        }
+        
         .navbar ul {
             margin-right: 1vh;
         }
@@ -186,33 +194,15 @@
             color: #000000;
             border-bottom: solid #000000 1px;
         }
-        /* About Section */
-        
-        #about {
-            height: 400px;
-        }
-        
-        .greeting {
-            width: 350px;
-        }
-        
-        .headshot {
-            bottom: 300px;
-            left: 250px;
-        }
-        
-        .info {
-            padding: 1rem;
-        }
         /*Marquee Scroller*/
         
         .marquee {
-            bottom: 200px;
-            left: 450px;
             width: 600px;
             height: 175px;
             white-space: nowrap;
             overflow: hidden;
+            margin: 5% auto;
+            position: relative;
         }
         
         .marquee span {
@@ -275,10 +265,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: minmax(100, auto);
-        }
-        
-        .project {
-            margin: 1em;
+            padding: 20px;
         }
     
         .portfolio-btn {
@@ -290,6 +277,122 @@
             font-size: 15px;
             font-weight: 900;
         }
+
+        /* Contact Section */
+        #contact {
+            margin-top: 20px;
+        }
+
+        .contact-form {
+            margin: auto;
+            padding: 10px 0;
+        }
+        
+        .contact-form label {
+            font-size: 20px;
+            padding: 5%;
+        }
+        
+        
+        .contact-form button {
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+        }
+        
+        @media all and (min-width: 1000px) {
+            .contact-form {
+                width: 40%;
+            }
+        }
+        
+        @media all and (min-width: 1080px) {
+            .contact-form {
+                width: 30%;
+            }
+        }
+        /* Modal */
+        
+        .modal-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s opacity 0.5s;
+        }
+        
+        .modal-active {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .modal {
+            width: 30%;
+            height: 30%;
+        }
+        /* Media Queries*/
+        /*Phone*/
+        /* Portrait */
+        
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+            
+
+            /* Navbar*/
+            #menu-button{
+                display: initial;
+            }
+            .navbar img {
+                margin: 0;
+            }
+            .socials {
+                display: none;
+            }
+            .navbar ul {
+                display: none;
+            }
+            /* About Section */
+            #about {
+                margin-top: -10%;
+            }
+    
+        /*Marquee Scroller*/
+        
+        .marquee {
+            bottom: initial;
+            left: initial;
+            width: 300px;
+            height: 175px;
+        }
+        
+        .marquee span {
+            animation: marquee 8s linear infinite;
+        }
+        
+        @keyframes marquee {
+            0% {
+                left: 230%;
+            }
+            100% {
+                left: -330%;
+            }
+        }
+        /* Portfolio Section */
+        
+        #portfolio-container {
+            display: grid;
+            grid-template-columns: initial;
+            grid-auto-rows: initial;
+        }
+        
+        .project {
+            margin: 1em;
+        }
+
         /* Contact Section */
         
         .contact-form {
@@ -347,37 +450,6 @@
             width: 30%;
             height: 30%;
         }
-        /* Media Queries*/
-        /*Phone*/
-        /* Portrait */
-        
-        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-            .container {
-                min-width: 375px;
-                max-width: 812px;
-            }
-            /* Navbar*/
-            .navbar {
-                height: 4vh;
-                width: 100%;
-            }
-            .navbar img {
-                margin: 5px;
-            }
-            .navbar li {
-                margin: auto 5px;
-                font-size: 15px;
-                font-weight: bolder;
-            }
-            .seperation {
-                padding: 0 1em;
-                border-width: 0 1px;
-                border-style: solid;
-            }
-            .navbar a:hover {
-                color: #000000;
-                border-bottom: solid #000000 1px;
-            }
         }
         /* Landscape */
         
