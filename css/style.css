@@ -137,7 +137,6 @@
             border-bottom: 2px solid transparent;
             border-image: linear-gradient(to bottom right, #ee7f7e 0%, #f896fc 25%, #8ee3ee 50%, #f1fa90 75%, #f5a289 100%);
             border-image-slice: 1;
-            font-size: 18px;
             border-radius: 3px;
         }
         
@@ -302,13 +301,13 @@
         
         @media all and (min-width: 1000px) {
             .contact-form {
-                width: 40%;
+                width: 60%;
             }
         }
         
         @media all and (min-width: 1080px) {
             .contact-form {
-                width: 30%;
+                width: 50%;
             }
         }
         /* Modal */
@@ -356,6 +355,10 @@
             /* About Section */
             #about {
                 margin-top: -10%;
+            }
+
+            .greeting {
+                padding: 0 20px;
             }
     
         /*Marquee Scroller*/
@@ -436,9 +439,6 @@
         
         .modal-bg {
             position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
             background-color: rgba(0, 0, 0, 0.5);
             align-items: center;
             visibility: hidden;
@@ -452,87 +452,6 @@
         }
         
         .modal {
-            width: 30%;
-            height: 30%;
-        }
-        }
-
-        /*Tablet*/
-
-        @media only screen and (max-device-width: 800px) and (orientation: portrait) {
-            
-            /* Navbar*/
-            #menu-button{
-                display: initial;
-            }
-            .navbar img {
-                margin: 0;
-            }
-            .socials {
-                display: none;
-            }
-            .navbar ul {
-                display: none;
-            }
-            /* About Section */
-            #about {
-                margin-top: -10%;
-            }
-    
-        /*Marquee Scroller*/
-        
-        .marquee {
-            bottom: initial;
-            left: initial;
             width: 300px;
-            height: 175px;
-        }
-        
-        .marquee span {
-            animation: marquee 8s linear infinite;
-        }
-        
-        @keyframes marquee {
-            0% {
-                left: 230%;
-            }
-            100% {
-                left: -330%;
-            }
-        }
-        /* Portfolio Section */
-        
-        #portfolio-container {
-            display: grid;
-            grid-template-columns: initial;
-            grid-auto-rows: initial;
-        }
-        
-        .project {
-            margin: 1em;
-        }
-
-        /* Modal */
-        
-        .modal-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.5);
-            align-items: center;
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0s opacity 0.5s;
-        }
-        
-        .modal-active {
-            visibility: visible;
-            opacity: 1;
-        }
-        
-        .modal {
-            width: 30%;
-            height: 30%;
         }
         }
