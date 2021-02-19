@@ -49,7 +49,7 @@
         #contact {
             text-align: center;
         }
-        
+
         p,
         .contact-form {
             width: 80%;
@@ -176,41 +176,7 @@
             outline: none;
             border: none;
         }
-        
-        .menu-options {
-            display: none;
-            text-align: center;
-        }
 
-        .page-link{
-            display: initial;
-            
-        }
-        .page-link li {
-            margin: 50px 0;
-            font-size: 30px;
-        }
-
-        .social-link{
-            justify-content: space-between;
-            margin: 40px 10px;
-            font-size: 20px;
-        }
-
-        .menu-container {
-            position: absolute;
-            margin: auto;
-            z-index: 1;
-            top:40px;
-            left: 0;
-            right: 0;
-            height: 400px;
-            width: 100%;
-        }
-        .noMenu {
-            display: none;
-        }
-        
         .sections {
             margin-right: 1vh;
         }
@@ -229,7 +195,47 @@
             color: #000000;
             border-bottom: solid #000000 1px;
         }
+/* Drop down menu */
+.menu-options {
+    display: none;
+    text-align: center;
+}
 
+.page-link{
+    display: initial;
+    
+}
+.page-link li {
+    margin: 50px 0;
+    font-size: 30px;
+}
+
+.social-link{
+    justify-content: space-between;
+    margin: 40px 10px;
+    font-size: 20px;
+}
+
+.menu-container {
+    position: absolute;
+    margin: auto;
+    top:40px;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 100%;
+    z-index: 1;
+    animation: menu-container 2s linear;
+}
+.noMenu {
+    display: none;
+}
+
+@keyframes menu-container {
+    0% {
+        top: -90%;
+    }
+}
         /*Marquee Scroller*/
         
         .marquee {
@@ -387,11 +393,18 @@
         @media only screen and (max-device-width: 500px) and (orientation: portrait) {
             
             /* Navbar*/
+            .navbar {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                z-index: 2;
+            }
             #menu-button{
                 display: initial;
             }
             .menu-container{
             background: #a69eace1;
+            
             }
             .menu-options {
                 display: initial;
@@ -409,7 +422,7 @@
 
             /* About Section */
             #about {
-                margin-top: -10%;
+                margin-top: 10%;
             }
 
             .greeting {
