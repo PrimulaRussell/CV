@@ -225,7 +225,7 @@
     height: 400px;
     width: 100%;
     z-index: 1;
-    animation: menu-container 2s linear;
+    animation: menu-container 1s linear;
 }
 .noMenu {
     display: none;
