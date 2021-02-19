@@ -193,6 +193,13 @@
             color: #000000;
             border-bottom: solid #000000 1px;
         }
+
+        .menu-options {
+            position: absolute;
+            background-color: khaki;
+            height: 100px;
+            width: 30px
+        }
         /*Marquee Scroller*/
         
         .marquee {

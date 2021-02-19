@@ -60,7 +60,7 @@ function sendEmail(name, email, message) {
     }).then((message) => modalAlert())
 }
 
-//Message sent alert//
+//Message sent alert// 
 
 let modalBg = document.querySelector(".modal-bg");
 
@@ -77,3 +77,8 @@ function modalDisappear() {
         modalBg.classList.remove("modal-active")
     }, 1000);
 }
+
+//Making menu appear when clicked//
+
+let menuBtn = document.getElementsByClassName("menu-button")
+let menuOption = document.getElementsByClassName("menu-options")
