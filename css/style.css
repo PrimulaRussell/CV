@@ -333,6 +333,10 @@
             width: 30%;
             height: 30%;
         }
+
+        .modal h1 {
+            margin: auto;
+        }
         /* Media Queries*/
         /*Phone*/
         /* Portrait */
@@ -396,28 +400,14 @@
 
         /* Modal */
         
-        .modal-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.5);
-            align-items: center;
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0s opacity 0.5s;
-        }
-        
-        .modal-active {
-            visibility: visible;
-            opacity: 1;
-        }
-        
         .modal {
-            width: 30%;
+            width: 70%;
             height: 30%;
+            text-align: center;
         }
         }
+
+
         /* Landscape */
         @media only screen and (max-device-width: 900px) and (orientation: landscape) {
             
@@ -452,6 +442,7 @@
         }
         
         .modal {
-            width: 300px;
+            width: 50%;
+            height: 50%;
         }
         }
