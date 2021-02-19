@@ -56,7 +56,8 @@
         }
         
         .navbar,
-        #portfolio {
+        #portfolio,
+        .social-footer {
             background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
         }
         
@@ -66,7 +67,8 @@
         .contact-form,
         input,
         .message,
-       .contact-form button{
+       .contact-form button,
+       .menu-options li{
             background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
             background-clip: text;
             -webkit-background-clip: text;
@@ -90,7 +92,7 @@
         .navbar,
         .socials,
         .modal-bg,
-        .modal {
+        .modal{
             display: flex;
         }
         
@@ -156,9 +158,9 @@
         .marquee {
             position: relative;
         }
+
         /* Navbar*/
-        
-        .navbar {
+        .navbar{
             height: 40px;
             justify-content: space-between;
         }
@@ -177,6 +179,22 @@
         
         .menu-options {
             display: none;
+            text-align: center;
+        }
+        
+        .page-link{
+            display: initial;
+            
+        }
+        .page-link li {
+            margin: 50px 0;
+            font-size: 30px;
+        }
+
+        .social-link{
+            justify-content: space-between;
+            margin: 40px 10px;
+            font-size: 20px;
         }
 
         .menu-container {
@@ -329,6 +347,12 @@
                 width: 50%;
             }
         }
+        
+        /*Footer*/
+        .footer {
+            display: none;
+        }
+        
         /* Modal */
         
         .modal-bg {
@@ -367,7 +391,7 @@
                 display: initial;
             }
             .menu-container{
-            background: #fbe6fd;
+            background: #a69eace1;
             }
             .menu-options {
                 display: initial;
@@ -382,9 +406,6 @@
                 display: none;
             }
             
-            .menu-options li {
-            color: seagreen;
-            }
 
             /* About Section */
             #about {
@@ -426,6 +447,19 @@
         
         .project {
             margin: 1em;
+        }
+
+        /*footer*/
+
+        .footer {
+            display: initial;
+        }
+        .social-footer {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 20px;
         }
 
         /* Modal */
