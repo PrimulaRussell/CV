@@ -66,7 +66,7 @@
         .contact-form,
         input,
         .message,
-       .contact-form button {
+       .contact-form button{
             background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
             background-clip: text;
             -webkit-background-clip: text;
@@ -170,16 +170,34 @@
         #menu-button {
             display: none;
             margin: auto;
-            background-color:transparent;
+            background-color : transparent;
             outline: none;
             border: none;
         }
         
-        .navbar ul {
+        .menu-options {
+            display: none;
+        }
+
+        .menu-container {
+            position: absolute;
+            margin: auto;
+            z-index: 1;
+            top:40px;
+            left: 0;
+            right: 0;
+            height: 400px;
+            width: 100%;
+        }
+        .noMenu {
+            display: none;
+        }
+        
+        .sections {
             margin-right: 1vh;
         }
         
-        .navbar li {
+        .sections li {
             margin: auto 2vh;
         }
         
@@ -194,12 +212,6 @@
             border-bottom: solid #000000 1px;
         }
 
-        .menu-options {
-            position: absolute;
-            background-color: khaki;
-            height: 100px;
-            width: 30px
-        }
         /*Marquee Scroller*/
         
         .marquee {
@@ -354,15 +366,26 @@
             #menu-button{
                 display: initial;
             }
+            .menu-container{
+            background: #fbe6fd;
+            }
+            .menu-options {
+                display: initial;
+            }
             .navbar img {
                 margin: 0;
             }
             .socials {
                 display: none;
             }
-            .navbar ul {
+            .sections {
                 display: none;
             }
+            
+            .menu-options li {
+            color: seagreen;
+            }
+
             /* About Section */
             #about {
                 margin-top: -10%;
@@ -412,26 +435,13 @@
             height: 30%;
             text-align: center;
         }
-        }
+    }
 
 
         /* Landscape */
         @media only screen and (max-device-width: 900px) and (orientation: landscape) {
             
-            /* Navbar*/
-            #menu-button{
-                display: initial;
-            }
-            .navbar img {
-                margin: 0;
-            }
-            .socials {
-                display: none;
-            }
-            .navbar ul {
-                display: none;
-            }
-        
+          
         /* Modal */
         
         .modal-bg {
@@ -451,5 +461,7 @@
         .modal {
             width: 50%;
             height: 50%;
+            text-align: center;
         }
         }
+    

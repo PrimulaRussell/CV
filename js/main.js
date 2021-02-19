@@ -79,6 +79,6 @@ function modalDisappear() {
 }
 
 //Making menu appear when clicked//
-
-let menuBtn = document.getElementsByClassName("menu-button")
-let menuOption = document.getElementsByClassName("menu-options")
+const menuBtn = document.querySelector("#menu-button")
+const menuContainer = document.querySelector(".menu-container")
+menuBtn.addEventListener('click',() => menuContainer.classList.toggle('noMenu'))
