@@ -79,6 +79,14 @@ function modalDisappear() {
 }
 
 //Making menu appear when clicked//
-const menuBtn = document.querySelector("#menu-button")
-const menuContainer = document.querySelector(".menu-container")
-menuBtn.addEventListener('click',() => menuContainer.classList.toggle('noMenu'))
+const menuBtn = document.querySelector("#menu-button");
+const menuContainer = document.querySelector(".menu-container");
+menuBtn.addEventListener('click',() => menuContainer.classList.toggle('noMenu'));
+
+//Making menu disappear when a link is clicked//
+
+document.querySelectorAll('.menu-disappear').forEach(item => {
+    item.addEventListener('click', () => 
+        menuContainer.classList.toggle('noMenu')
+    )
+  })
