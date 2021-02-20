@@ -387,7 +387,7 @@
         /*Phone*/
         /* Portrait */
         
-        @media only screen and (max-device-width: 500px) and (orientation: portrait) {
+        @media only screen and (max-device-width: 500px) and (max-device-height: 950px)  and (orientation: portrait) {
             
             /* Navbar*/
             .navbar {
@@ -483,7 +483,7 @@
 
 
         /* Landscape */
-        @media only screen and (max-device-width: 900px) and (orientation: landscape) {
+        @media only screen and (max-device-width: 900px) and (max-device-height: 1300px){
             
            /* Portfolio Section */
         
@@ -496,7 +496,28 @@
         .project {
             margin: 1em;
         }
+          /*Marquee Scroller*/
         
+          .marquee {
+            bottom: initial;
+            left: initial;
+            width: 300px;
+            height: 175px;
+        }
+        
+        .marquee span {
+            animation: marquee 9s linear infinite;
+        }
+        
+        @keyframes marquee {
+            0% {
+                left: 200%;
+            }
+            100% {
+                left: -340%;
+            }
+        }
+
         /* Modal */
         
         .modal-bg {
@@ -519,4 +540,3 @@
             text-align: center;
         }
         }
-    
