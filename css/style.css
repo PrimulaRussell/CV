@@ -485,7 +485,18 @@
         /* Landscape */
         @media only screen and (max-device-width: 900px) and (orientation: landscape) {
             
-          
+           /* Portfolio Section */
+        
+        #portfolio-container {
+            display: grid;
+            grid-template-columns: initial;
+            grid-auto-rows: initial;
+        }
+        
+        .project {
+            margin: 1em;
+        }
+        
         /* Modal */
         
         .modal-bg {
