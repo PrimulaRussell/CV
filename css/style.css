@@ -342,6 +342,7 @@
             .marquee {
                 visibility: hidden;
                 height: 0;
+                width: 0;
                 padding: 0;
                 margin: 0;
             }
@@ -355,7 +356,7 @@
                 margin: auto;
                 top: 0;
                 left: 0;
-                padding: 15px 0;
+                padding: 20px;
             }
 
         }
@@ -486,9 +487,11 @@
                 margin: 10px auto;
                 padding: 10px 0;
             }
-            .marquee-off{
+
+            .marquee-off {
                 display: none;
             }
+
             .marquee span {
                 animation: marquee 9s linear infinite;
             }
@@ -540,13 +543,14 @@
 
 
         /* Landscape */
-        @media only screen and (max-device-width: 900px) and (orientation: landscape){
+        @media only screen and (max-device-width: 900px) and (orientation: landscape) {
 
             /*About*/
-            .greeting{
+            .greeting {
                 width: 80%;
                 margin: 10px auto;
             }
+
             /* Portfolio Section */
 
             #portfolio-container {
@@ -560,10 +564,18 @@
             }
 
             /*Marquee Scroller*/
+            .marquee {
+                visibility: initial;
+                width: 600px;
+                padding: 10px 0;
+                height: fit-content;
+                margin: 10px auto;
+            }
 
-            .marquee-off{
+            .marquee-off {
                 display: none;
             }
+
             /* Modal */
 
             .modal-bg {
