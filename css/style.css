@@ -1,48 +1,50 @@
         /*Globals*/
-        
+
         @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
         * {
             margin: 0;
             padding: 0%;
             box-sizing: border-box;
             font-family: 'Hachi Maru Pop', monospace;
         }
-        
+
         body {
             line-height: 1.6;
         }
-        
+
         .container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 0 40px;
         }
-        
+
         ul {
             list-style-type: none;
         }
-        
+
         a {
             text-decoration: none;
         }
-        
+
         img {
             display: block;
             margin: auto;
         }
-        
+
         .greeting {
             margin-top: 60px;
             font-size: 35px;
             padding-bottom: 20px;
         }
-        
+
         p {
             margin: 15px auto 0px auto;
             font-size: 16px;
         }
+
         /* Repeating Styles*/
-        
+
         .greeting,
         #about,
         #portfolio,
@@ -54,21 +56,21 @@
         .contact-form {
             width: 80%;
         }
-        
+
         .navbar,
         #portfolio,
         .social-footer {
             background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
         }
-        
+
         span,
         .greeting,
         #contact,
         .contact-form,
         input,
         .message,
-       .contact-form button,
-       .menu-options li {
+        .contact-form button,
+        .menu-options li {
             background: linear-gradient(to right, #ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #f5a289);
             background-clip: text;
             -webkit-background-clip: text;
@@ -80,36 +82,36 @@
             -ms-background-clip: text;
             -ms-text-fill-color: transparent;
         }
-        
+
         .marquee,
-       .contact-form button,
+        .contact-form button,
         .modal {
             border: 2px solid;
             border-image: conic-gradient(#ee7f7e, #f896fc, #b189f5, #87c1f1, #8ee3ee, #8cf391, #f1fa90, #f3cb8a, #ee7f7e) 1
         }
-        
+
         ul,
         .navbar,
         .socials,
         .modal-bg,
-        .modal{
+        .modal {
             display: flex;
         }
-        
-        
+
+
         .contact-form input,
         .contact-form textarea,
         .contact-form button,
         .modal-bg {
             width: 100%;
         }
-        
+
         .navbar,
         .navbar a,
         #portfolio {
             color: #fff;
         }
-        
+
         .contact-form label,
         .marquee span {
             display: inline-block;
@@ -120,33 +122,33 @@
             border: 2px solid #fff;
             border-radius: 5px;
         }
-        
+
         .contact-form input,
         .contact-form textarea,
         .contact-form button {
             padding: 12px 20px;
             outline: none;
         }
-        
+
         .contact-form input,
-        .contact-form textarea{
+        .contact-form textarea {
             border: none;
             border-bottom: 2px solid transparent;
             border-image: linear-gradient(to bottom right, #ee7f7e 0%, #f896fc 25%, #8ee3ee 50%, #f1fa90 75%, #f5a289 100%);
             border-image-slice: 1;
             border-radius: 3px;
         }
-        
+
         .contact-form input:focus,
         .contact-form textarea:focus {
             border-bottom: 2px solid #000;
         }
-        
+
         .modal-bg,
         .modal {
             justify-content: center;
         }
-        
+
         .greeting,
         .headshot,
         .marquee span,
@@ -155,19 +157,19 @@
         }
 
         /* Navbar*/
-        .navbar{
+        .navbar {
             height: 40px;
             justify-content: space-between;
         }
-        
+
         .navbar img {
             margin: 10px;
         }
-        
+
         #menu-button {
             display: none;
             margin: auto;
-            background-color : transparent;
+            background-color: transparent;
             outline: none;
             border: none;
         }
@@ -175,64 +177,68 @@
         .sections {
             margin-right: 1vh;
         }
-        
+
         .sections li {
             margin: auto 2vh;
         }
-        
+
         .seperation {
             padding: 0 1em;
             border-width: 0 1px;
             border-style: solid;
         }
-        
+
         .navbar a:hover {
             color: #000000;
             border-bottom: solid #000000 1px;
         }
-/* Drop down menu */
-.menu-options {
-    display: none;
-    text-align: center;
-}
 
-.page-link{
-    display: initial;
-    
-}
-.page-link li {
-    margin: 50px 0;
-    font-size: 30px;
-}
+        /* Drop down menu */
+        .menu-options {
+            display: none;
+            text-align: center;
+        }
 
-.social-link{
-    justify-content: space-between;
-    margin: 40px 10px;
-    font-size: 20px;
-}
+        .page-link {
+            display: initial;
 
-.menu-container {
-    position: absolute;
-    margin: auto;
-    top:40px;
-    left: 0;
-    right: 0;
-    height: 400px;
-    width: 100%;
-    z-index: 1;
-    animation: menu-container 1s linear;
-}
-.noMenu {
-    display: none;
-}
+        }
 
-@keyframes menu-container {
-    0% {
-        top: -90%;
-    }
-}
+        .page-link li {
+            margin: 50px 0;
+            font-size: 30px;
+        }
+
+        .social-link {
+            justify-content: space-between;
+            margin: 40px 10px;
+            font-size: 20px;
+        }
+
+        .menu-container {
+            position: absolute;
+            margin: auto;
+            top: 40px;
+            left: 0;
+            right: 0;
+            height: 400px;
+            width: 100%;
+            z-index: 1;
+            animation: menu-container 1s linear;
+        }
+
+        .noMenu {
+            display: none;
+        }
+
+        @keyframes menu-container {
+            0% {
+                top: -90%;
+            }
+        }
+
         /*Marquee Scroller*/
-        
+
         .marquee {
             width: 600px;
             height: 175px;
@@ -241,63 +247,69 @@
             margin: 5% auto;
             position: relative;
         }
-        
+
+        .marquee-off {
+            display: none;
+        }
+
         .marquee span {
             top: 15%;
             left: 100%;
             animation: marquee 8.5s linear infinite;
         }
-        
+
         .marquee:hover span {
             animation-play-state: paused;
         }
-        
+
         .marquee span:nth-child(1) {
             animation-delay: 0s;
         }
-        
+
         .marquee span:nth-child(2) {
             animation-delay: 0.4s;
         }
-        
+
         .marquee span:nth-child(3) {
             animation-delay: 0.8s;
         }
-        
+
         .marquee span:nth-child(4) {
             animation-delay: 1.2s;
         }
-        
+
         .marquee span:nth-child(5) {
             animation-delay: 1.6s;
         }
-        
+
         .marquee span:nth-child(6) {
             animation-delay: 2.0s;
         }
-        
+
         .marquee span:nth-child(7) {
             animation-delay: 2.4s;
         }
-        
+
         .marquee span:nth-child(8) {
             animation-delay: 2.75s;
         }
-        
+
         @keyframes marquee {
             0% {
                 left: 95%;
             }
+
             100% {
                 left: -170%;
             }
         }
+
         /* Portfolio Section */
-        
+
         #portfolio {
             padding-bottom: 5em;
         }
-        
+
         #portfolio-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -305,7 +317,7 @@
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.329);
         }
-    
+
         .portfolio-btn {
             outline: none;
             padding: 2%;
@@ -314,6 +326,34 @@
             background-color: transparent;
             font-size: 15px;
             font-weight: 900;
+        }
+
+        @media all and (max-width: 800px) {
+            #portfolio-container {
+                grid-template-columns: repeat(1, 1fr);
+                grid-auto-rows: minmax(100, auto);
+
+            }
+
+            .project {
+                padding: 10px;
+            }
+
+            .marquee {
+                display: none;
+            }
+
+            .marquee-off {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: minmax(100, auto);
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                top: 0;
+                left: 0;
+            }
+
         }
 
         /* Contact Section */
@@ -325,38 +365,38 @@
             margin: auto;
             padding: 10px 0;
         }
-        
+
         .contact-form label {
             font-size: 20px;
             padding: 5%;
         }
-        
+
         .contact-form button {
             font-size: 20px;
             font-weight: 600;
             cursor: pointer;
             transition: 0.2s ease-in-out;
         }
-        
+
         @media all and (min-width: 1000px) {
             .contact-form {
                 width: 60%;
             }
         }
-        
+
         @media all and (min-width: 1080px) {
             .contact-form {
                 width: 50%;
             }
         }
-        
+
         /*Footer*/
         .footer {
             display: none;
         }
-        
+
         /* Modal */
-        
+
         .modal-bg {
             position: fixed;
             top: 0;
@@ -368,12 +408,12 @@
             opacity: 0;
             transition: visibility 0s opacity 0.5s;
         }
-        
+
         .modal-active {
             visibility: visible;
             opacity: 1;
         }
-        
+
         .modal {
             width: 30%;
             height: 30%;
@@ -383,12 +423,13 @@
         .modal h1 {
             margin: auto;
         }
+
         /* Media Queries*/
         /*Phone*/
         /* Portrait */
-        
-        @media only screen and (max-device-width: 500px) and (max-device-height: 950px)  and (orientation: portrait) {
-            
+
+        @media only screen and (max-device-width: 500px) and (max-device-height: 950px) and (orientation: portrait) {
+
             /* Navbar*/
             .navbar {
                 position: absolute;
@@ -396,26 +437,32 @@
                 top: 0;
                 z-index: 2;
             }
-            #menu-button{
+
+            #menu-button {
                 display: initial;
             }
-            .menu-container{
-            background: #474747ea;
-            
+
+            .menu-container {
+                background: #474747ea;
+
             }
+
             .menu-options {
                 display: initial;
             }
+
             .navbar img {
                 margin: 0;
             }
+
             .socials {
                 display: none;
             }
+
             .sections {
                 display: none;
             }
-            
+
 
             /* About Section */
             #about {
@@ -425,118 +472,123 @@
             .greeting {
                 padding: 0 20px;
             }
-    
-        /*Marquee Scroller*/
-        
-        .marquee {
-            bottom: initial;
-            left: initial;
-            width: 300px;
-            height: 175px;
-        }
-        
-        .marquee span {
-            animation: marquee 9s linear infinite;
-        }
-        
-        @keyframes marquee {
-            0% {
-                left: 200%;
+
+            /*Marquee Scroller*/
+
+            .marquee {
+                bottom: initial;
+                left: initial;
+                width: 300px;
+                height: 175px;
             }
-            100% {
-                left: -340%;
+
+            .marquee span {
+                animation: marquee 9s linear infinite;
+            }
+
+            @keyframes marquee {
+                0% {
+                    left: 200%;
+                }
+
+                100% {
+                    left: -340%;
+                }
+            }
+
+            /* Portfolio Section */
+
+            #portfolio-container {
+                display: grid;
+                grid-template-columns: initial;
+                grid-auto-rows: initial;
+            }
+
+            .project {
+                margin: 1em;
+            }
+
+            /*footer*/
+
+            .footer {
+                display: initial;
+            }
+
+            .social-footer {
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-top: 20px;
+            }
+
+            /* Modal */
+
+            .modal {
+                width: 70%;
+                height: 30%;
+                text-align: center;
             }
         }
-        /* Portfolio Section */
-        
-        #portfolio-container {
-            display: grid;
-            grid-template-columns: initial;
-            grid-auto-rows: initial;
-        }
-        
-        .project {
-            margin: 1em;
-        }
-
-        /*footer*/
-
-        .footer {
-            display: initial;
-        }
-        .social-footer {
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            margin-top: 20px;
-        }
-
-        /* Modal */
-        
-        .modal {
-            width: 70%;
-            height: 30%;
-            text-align: center;
-        }
-    }
 
 
         /* Landscape */
-        @media only screen and (max-device-width: 900px) and (max-device-height: 1300px){
-            
-           /* Portfolio Section */
-        
-        #portfolio-container {
-            display: grid;
-            grid-template-columns: initial;
-            grid-auto-rows: initial;
-        }
-        
-        .project {
-            margin: 1em;
-        }
-          /*Marquee Scroller*/
-        
-          .marquee {
-            bottom: initial;
-            left: initial;
-            width: 300px;
-            height: 175px;
-        }
-        
-        .marquee span {
-            animation: marquee 9s linear infinite;
-        }
-        
-        @keyframes marquee {
-            0% {
-                left: 200%;
-            }
-            100% {
-                left: -340%;
-            }
-        }
+        @media only screen and (max-device-width: 900px) and (max-device-height: 1300px) {
 
-        /* Modal */
-        
-        .modal-bg {
-            position: fixed;
-            background-color: rgba(0, 0, 0, 0.5);
-            align-items: center;
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0s opacity 0.5s;
-        }
-        
-        .modal-active {
-            visibility: visible;
-            opacity: 1;
-        }
-        
-        .modal {
-            width: 50%;
-            height: 50%;
-            text-align: center;
-        }
+            /* Portfolio Section */
+
+            #portfolio-container {
+                display: grid;
+                grid-template-columns: initial;
+                grid-auto-rows: initial;
+            }
+
+            .project {
+                margin: 1em;
+            }
+
+            /*Marquee Scroller*/
+
+            .marquee {
+                bottom: initial;
+                left: initial;
+                width: 300px;
+                height: 175px;
+            }
+
+            .marquee span {
+                animation: marquee 9s linear infinite;
+            }
+
+            @keyframes marquee {
+                0% {
+                    left: 200%;
+                }
+
+                100% {
+                    left: -340%;
+                }
+            }
+
+            /* Modal */
+
+            .modal-bg {
+                position: fixed;
+                background-color: rgba(0, 0, 0, 0.5);
+                align-items: center;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s opacity 0.5s;
+            }
+
+            .modal-active {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .modal {
+                width: 50%;
+                height: 50%;
+                text-align: center;
+            }
         }

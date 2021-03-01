@@ -73,7 +73,7 @@ function modalAlert() {
 }
 
 function modalDisappear() {
-    setTimeout(function() {
+    setTimeout(function () {
         modalBg.classList.remove("modal-active")
     }, 1000);
 }
@@ -81,12 +81,12 @@ function modalDisappear() {
 //Making menu appear when clicked//
 const menuBtn = document.querySelector("#menu-button");
 const menuContainer = document.querySelector(".menu-container");
-menuBtn.addEventListener('click',() => menuContainer.classList.toggle('noMenu'));
+menuBtn.addEventListener('click', () => menuContainer.classList.toggle('noMenu'));
 
 //Making menu disappear when a link is clicked//
 
 document.querySelectorAll('.menu-disappear').forEach(item => {
-    item.addEventListener('click', () => 
+    item.addEventListener('click', () =>
         menuContainer.classList.toggle('noMenu')
     )
-  })
+})
